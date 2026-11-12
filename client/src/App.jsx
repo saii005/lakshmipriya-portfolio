@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -16,8 +16,8 @@ import { AdminDashboard } from './pages/AdminDashboard';
 export default function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
-        <div className="app-shell selection:bg-amber-200 selection:text-amber-950">
+      <HashRouter>
+        <div className="app-shell">
           <PlaygroundDecor />
           <Navbar />
           <main className="app-main">
@@ -35,7 +35,7 @@ export default function App() {
           </main>
           <Footer />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import api from '../api/client';
+import { fallbackServices } from '../data/fallbackData';
 import { Search, X } from 'lucide-react';
 
 export const ServicesPage = () => {
@@ -45,11 +46,14 @@ export const ServicesPage = () => {
     const fetchServices = async () => {
       try {
         const res = await api.get('/services');
-        if (res.data?.success) {
+        if (res.data?.success && res.data.data?.length > 0) {
           setServices(res.data.data);
+        } else {
+          setServices(fallbackServices);
         }
       } catch (err) {
-        console.error('Failed to load services:', err);
+        console.error('Failed to load services, using static catalog:', err);
+        setServices(fallbackServices);
       } finally {
         setLoading(false);
       }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import api from '../api/client';
+import { fallbackDocuments } from '../data/fallbackData';
 import { ChevronLeft, ChevronRight, Maximize2, Minimize2 } from 'lucide-react';
 
 export const DocumentsPage = () => {
@@ -16,20 +17,27 @@ export const DocumentsPage = () => {
 
   useEffect(() => {
     const fetchDocs = async () => {
+      const applyDocs = (docs) => {
+        setDocuments(docs);
+        if (slug) {
+          const found = docs.find((d) => d.slug === slug);
+          setCurrentDoc(found || docs[0]);
+        } else {
+          setCurrentDoc(docs[0]);
+          navigate(`/docs/${docs[0].slug}`, { replace: true });
+        }
+      };
+
       try {
         const res = await api.get('/documents');
         if (res.data?.success && res.data.data.length > 0) {
-          setDocuments(res.data.data);
-          if (slug) {
-            const found = res.data.data.find((d) => d.slug === slug);
-            setCurrentDoc(found || res.data.data[0]);
-          } else {
-            setCurrentDoc(res.data.data[0]);
-            navigate(`/docs/${res.data.data[0].slug}`, { replace: true });
-          }
+          applyDocs(res.data.data);
+        } else {
+          applyDocs(fallbackDocuments);
         }
       } catch (err) {
-        console.error('Failed to load documents:', err);
+        console.error('Failed to load documents, using static decks:', err);
+        applyDocs(fallbackDocuments);
       } finally {
         setLoading(false);
       }
