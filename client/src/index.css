@@ -1,0 +1,321 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --ink: #2a302d;
+  --muted: #59625b;
+  --warm: #faf7f0;
+  --cream: #f3eee4;
+  --warm-nav: #f7f2e9;
+  --linen: #f0e9dc;
+  --sand: #e7ddd0;
+  --peach: #e8cbb1;
+  --sage: #d8e0d5;
+  --rust: #9d5a41;
+  --deep: #3d4a3d;
+  --forest: #344438;
+  --forest-dark: #243529;
+  --line: #ded8cd;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--warm);
+    color: var(--ink);
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, blockquote {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.14;
+    color: var(--ink);
+  }
+
+  em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--rust);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--rust);
+    outline-offset: 3px;
+  }
+}
+
+/* ==========================================================================
+   CLASSIC EDITORIAL DESIGN SYSTEM
+   ========================================================================== */
+
+@layer components {
+  .app-shell {
+    @apply min-h-screen flex flex-col relative bg-[#FAF7F0] text-[#2A302D];
+  }
+
+  .app-main {
+    @apply flex-grow;
+  }
+
+  .shell {
+    width: min(1180px, calc(100% - 48px));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    .shell {
+      width: min(1180px, calc(100% - 80px));
+    }
+  }
+
+  .page-container {
+    @apply shell;
+  }
+
+  /* Editorial Typography */
+  .kicker {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--rust);
+    line-height: 1.4;
+  }
+
+  .section-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.15rem, 3.8vw, 3.5rem);
+    letter-spacing: -0.03em;
+    line-height: 1.13;
+    color: var(--ink);
+  }
+
+  .section-description {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  /* Classic Buttons & Links */
+  .solid-btn {
+    background-color: var(--deep);
+    border: 1px solid var(--deep);
+    color: #faf7f0;
+    padding: 15px 24px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    border-radius: 0;
+  }
+
+  .solid-btn:hover {
+    background-color: var(--forest-dark);
+    border-color: var(--forest-dark);
+  }
+
+  .solid-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .outline-btn {
+    background-color: transparent;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    padding: 14px 22px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 0;
+  }
+
+  .outline-btn:hover {
+    background-color: var(--ink);
+    color: var(--warm);
+  }
+
+  .under-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink);
+    border-bottom: 1px solid var(--rust);
+    padding-bottom: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+  }
+
+  .under-link:hover {
+    color: var(--rust);
+  }
+
+  /* Classic Buttons Aliases (for compatibility) */
+  .btn-primary {
+    @apply solid-btn;
+  }
+
+  .btn-gold {
+    @apply solid-btn;
+  }
+
+  .btn-secondary {
+    @apply outline-btn;
+  }
+
+  .btn-dark {
+    @apply solid-btn;
+  }
+
+  /* Numbered Path Rows (Signature Reference Pattern) */
+  .path-list {
+    border-top: 1px solid var(--line);
+  }
+
+  .path-row {
+    display: grid;
+    grid-template-columns: 56px 1fr auto;
+    align-items: center;
+    padding: 24px 10px;
+    border-bottom: 1px solid var(--line);
+    gap: 16px;
+    transition: background-color 0.2s ease, padding-left 0.2s ease;
+  }
+
+  @media (min-width: 768px) {
+    .path-row {
+      grid-template-columns: 9% 33% 1fr 36px;
+    }
+  }
+
+  .path-row:hover {
+    background-color: var(--linen);
+    padding-left: 20px;
+  }
+
+  .path-num {
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--rust);
+  }
+
+  .path-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.35rem, 2.3vw, 1.95rem);
+    font-weight: 400;
+    color: var(--ink);
+  }
+
+  .path-detail {
+    font-size: 0.94rem;
+    color: var(--muted);
+  }
+
+  .path-arrow {
+    font-size: 1.2rem;
+    color: var(--rust);
+  }
+
+  /* Classic Editorial Monogram Seal */
+  .editorial-monogram {
+    width: 100%;
+    min-height: 280px;
+    border: 1px solid var(--line);
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 36px;
+  }
+
+  .editorial-monogram-inner {
+    border: 1px solid var(--line);
+    padding: 28px 36px;
+    text-align: center;
+    background-color: var(--warm);
+  }
+
+  /* Forms */
+  .form-card {
+    background-color: var(--warm);
+    border: 1px solid var(--line);
+    padding: 2.25rem;
+  }
+
+  .form-field-label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--ink);
+    margin-bottom: 0.45rem;
+  }
+
+  .form-control-input {
+    width: 100%;
+    border: 1px solid #abb6aa;
+    background-color: #f9faf5;
+    padding: 13px 15px;
+    color: var(--ink);
+    border-radius: 0;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .form-control-input:focus {
+    border-color: var(--deep);
+    box-shadow: 0 0 0 2px rgba(61, 74, 61, 0.14);
+  }
+
+  /* Classic Editorial Cards */
+  .classic-card {
+    background-color: var(--warm);
+    border: 1px solid var(--line);
+    padding: 1.75rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+  }
+
+  .classic-card:hover {
+    border-color: var(--rust);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}

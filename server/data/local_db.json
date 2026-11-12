@@ -1,0 +1,516 @@
+{
+  "users": [
+    {
+      "_id": "user_admin_001",
+      "name": "Lakshmipriya Vinothkumar",
+      "email": "admin@lakshmipriya.com",
+      "password": "$2a$10$9BcwhVPBkP2997Zgj9p2ju6T6FZbAUQXZr6EmZxSHYpEFs/fwfmWu",
+      "role": "admin",
+      "createdAt": "2026-10-27T05:31:34.946Z"
+    }
+  ],
+  "services": [
+    {
+      "_id": "srv_1",
+      "title": "Astromath & Playful Brain Acceleration",
+      "slug": "astromath-brain-development",
+      "category": "Kids & Students",
+      "badge": "Most Loved by Kids",
+      "color": "sun",
+      "icon": "Sparkles",
+      "tagline": "Turn fear of numbers into a magical playground of patterns!",
+      "description": "A fun-filled, pattern-based learning framework rooted in ancient Indian mathematics and cognitive psychology. Children discover numerical harmony, speed mental arithmetic, memory enhancement, and curiosity-driven problem solving.",
+      "highlights": [
+        "Pattern-based cognitive exercises",
+        "Memory retention tricks and visualization",
+        "Attention span & focus boosters",
+        "Fearless math mindset for young learners"
+      ],
+      "audience": "Ages 6 to 16, School Students",
+      "duration": "4 to 8 Weeks Interactive Workshops",
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    },
+    {
+      "_id": "srv_2",
+      "title": "Early Childhood & School Student Counselling",
+      "slug": "student-and-child-counselling",
+      "category": "Kids & Students",
+      "badge": "Compassionate Care",
+      "color": "mint",
+      "icon": "Smile",
+      "tagline": "Empathetic behavioral and emotional guidance for blooming souls.",
+      "description": "Drawing from deep hands-on experience at Sri Aurobindo Ashram Kindergarten & Big School. Specialized intervention for behavioral balance, learning disability support, emotional intelligence, and natural talent identification.",
+      "highlights": [
+        "Learning disability identification & tailored support",
+        "Play-based behavioral transformation",
+        "Emotional resilience and stress relief",
+        "Creative expression and self-confidence building"
+      ],
+      "audience": "Kindergarten, Elementary & Middle School Kids",
+      "duration": "One-on-One & Small Pod Sessions",
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    },
+    {
+      "_id": "srv_3",
+      "title": "Conscious Parenting & Prenatal Harmony",
+      "slug": "conscious-parenting-prenatal",
+      "category": "Parents & Families",
+      "badge": "Transformative",
+      "color": "coral",
+      "icon": "Heart",
+      "tagline": "Nurturing the child before and after birth with timeless wisdom.",
+      "description": "Guidance for expecting mothers and modern parents combining developmental psychology, Ayurvedic lifestyle coaching, and traditional prenatal nurturing. Fostering a serene domestic ecosystem where children thrive naturally.",
+      "highlights": [
+        "Prenatal psychology & pregnancy wellness",
+        "Positive discipline without yelling or anxiety",
+        "Parent-child bonding rituals and communication",
+        "Screen-time reduction through joyful real-world play"
+      ],
+      "audience": "Expecting Parents, Mothers, Families",
+      "duration": "Weekend Modules & Family Consultations",
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    },
+    {
+      "_id": "srv_4",
+      "title": "Mental Education & Curriculum Architecture",
+      "slug": "mental-education-curriculum",
+      "category": "Schools & Educators",
+      "badge": "Institutional Growth",
+      "color": "grape",
+      "icon": "Compass",
+      "tagline": "Empowering schools to teach how to think, not what to think.",
+      "description": "Comprehensive curriculum design inspired by Integral Education (Sri Aurobindo Ashram) and modern cognitive science. Includes teacher manuals, interactive worksheets, experiential activities, and assessment frameworks.",
+      "highlights": [
+        "Full mental education syllabus and lesson plans",
+        "Hands-on science & experimental learning toolkits",
+        "Teacher facilitator training & classroom management",
+        "Institutional growth and academic enrichment strategy"
+      ],
+      "audience": "Schools, Principals, Educational Trusts & Teachers",
+      "duration": "Institutional Partnerships & Workshops",
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    },
+    {
+      "_id": "srv_5",
+      "title": "Design Your Life: Youth Career & Life Mastery",
+      "slug": "design-your-life-coaching",
+      "category": "Youth & College",
+      "badge": "Future Ready",
+      "color": "sky",
+      "icon": "Rocket",
+      "tagline": "Unlock high-impact career planning and inner confidence.",
+      "description": "Flagship program developed through New India Foundation (as CIO) and Uni5 (Board of Directors). Blends enterprise systems thinking from Zoho & Wipro with career guidance, aptitude coaching, group discussions, and leadership.",
+      "highlights": [
+        "Aptitude and skill-matrix self analysis",
+        "Group discussion & interview mastery",
+        "Time, focus, and life-prioritization blueprints",
+        "Entrepreneurship awareness and problem solving"
+      ],
+      "audience": "College Students, High School Seniors & Job Seekers",
+      "duration": "Bootcamps & Career Mentoring Labs",
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    },
+    {
+      "_id": "srv_6",
+      "title": "Self to Self: Mindfulness, Pranic & Holistic Healing",
+      "slug": "mindfulness-pranic-healing",
+      "category": "Holistic Wellness",
+      "badge": "Inner Vitality",
+      "color": "mint",
+      "icon": "Sun",
+      "tagline": "Awaken tranquility, vital energy, and holistic equilibrium.",
+      "description": "Co-founded initiative leveraging certified Pranic Healing, Pranic Violet Healing, Dorn Therapy, Nadi consultation guidance, and deep meditation for total physical and energetic wellness.",
+      "highlights": [
+        "Meditation & breathwork (Pranayama) labs",
+        "Stress relief and psychosomatic healing",
+        "Natural lifestyle alignment with circadian rhythms",
+        "Community wellness and holistic health guidance"
+      ],
+      "audience": "Adults, Educators, Corporate Teams & Seekers",
+      "duration": "Retreats, Online Circles & Private Sessions",
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    }
+  ],
+  "documents": [
+    {
+      "_id": "doc_1",
+      "title": "The Grand Adventure: From Coding Machines to Nurturing Young Minds",
+      "slug": "journey-code-to-human-potential",
+      "category": "Inspirational Journey",
+      "badge": "Storytime Deck",
+      "order": 1,
+      "summary": "How a software leader at Zoho & Wipro realized the most powerful operating system in the universe is the human heart and mind.",
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Hello Young Explorers! Meet Teacher Lakshmipriya",
+          "subtitle": "A story about curiosity, computers, and finding your true superpower",
+          "icon": "WavingHand",
+          "color": "sun",
+          "bulletPoints": [
+            "Ever wondered how your favorite games and apps run behind the screen?",
+            "I spent over 9 years writing lines of code to make computers talk to each other across the world!",
+            "I worked at Zoho Corporation and Wipro Technologies building massive systems for telecom and retail.",
+            "Yet, the most fascinating discovery of all wasn't in computer chips—it was inside YOU!"
+          ],
+          "quote": "Code gives structure to silicon, but love and curiosity give light to life.",
+          "tags": [
+            "Inspiration",
+            "Engineering",
+            "Teacher Story"
+          ]
+        },
+        {
+          "slideNumber": 2,
+          "title": "The Zoho & Wipro Years: Crafting Software with Care",
+          "subtitle": "How learning engineering teaches patience and problem solving",
+          "icon": "Laptop",
+          "color": "sky",
+          "bulletPoints": [
+            "At Zoho (AdventNet), I led engineering teams building WebNMS (Network Management Systems).",
+            "Automated software packaging and developed Internationalization (I18N) so people anywhere could use our tools.",
+            "At Wipro, engineered the BEAST system for Best Buy USA, connecting major telecom networks like Verizon and AT&T.",
+            "Lesson for kids: When a bug appears in code or math, don't give up! Treat it like a detective mystery waiting to be solved."
+          ],
+          "quote": "Mistakes are simply experiments that haven't finished teaching us yet.",
+          "tags": [
+            "Zoho",
+            "Wipro",
+            "Problem Solving",
+            "Resilience"
+          ]
+        },
+        {
+          "slideNumber": 3,
+          "title": "The Big Leap: Answering the Calling of the Heart",
+          "subtitle": "Transitioning from programming machines to nurturing human souls",
+          "icon": "HeartHandshake",
+          "color": "coral",
+          "bulletPoints": [
+            "In 2009, I completed my MBA in Human Resources, and later earned my Master's in Psychology.",
+            "Studied Early Childhood Education and traditional Indian Knowledge Systems.",
+            "Discovered that when a child feels heard, safe, and encouraged, their imagination has no limits.",
+            "Founded 'Take Your Flight' and co-founded 'Self to Self' to help every person soar."
+          ],
+          "quote": "Every child is born a natural genius; our job is simply to keep their wonder alive.",
+          "tags": [
+            "Psychology",
+            "Early Childhood",
+            "Purpose"
+          ]
+        }
+      ],
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    },
+    {
+      "_id": "doc_2",
+      "title": "Integral Education: Wonders of Sri Aurobindo Ashram",
+      "slug": "integral-education-ashram",
+      "category": "Philosophy & Teaching",
+      "badge": "Playground Wisdom",
+      "order": 2,
+      "summary": "Insights from serving as Counsellor and Mental Education Curriculum Developer in Pondicherry.",
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "The Shankar Chetty Heritage Home & Service",
+          "subtitle": "Learning history, values, and community connection",
+          "icon": "Home",
+          "color": "grape",
+          "bulletPoints": [
+            "Served as volunteer and fundraising coordinator at Sri Aurobindo Shankar Chetty Home in Pondicherry.",
+            "A sanctuary of peace and the first historical residence of Sri Aurobindo upon reaching Pondicherry.",
+            "Helped raise funds for heritage preservation and annual service activities.",
+            "Key Takeaway: True strength comes from giving back to the community and honoring sacred spaces."
+          ],
+          "quote": "To serve without expecting reward is the sweetest joy in the world.",
+          "tags": [
+            "Heritage",
+            "Ashram",
+            "Volunteering"
+          ]
+        },
+        {
+          "slideNumber": 2,
+          "title": "Ashram Kindergarten: A Gentle Sanctuary for Little Hearts",
+          "subtitle": "Student, parent, and teacher guidance for holistic growth",
+          "icon": "Baby",
+          "color": "mint",
+          "bulletPoints": [
+            "Kindergarten should feel like sunshine—filled with laughter, colors, and freedom to explore.",
+            "Provided behavioural interventions and compassionate support for children with learning differences.",
+            "Helped parents understand emotional development rather than placing academic pressure.",
+            "Guided teachers to spot unique natural talents in each child instead of comparing them."
+          ],
+          "quote": "A flower does not compete with the flower next to it. It just blooms.",
+          "tags": [
+            "Kindergarten",
+            "Counselling",
+            "Parenting",
+            "Empathy"
+          ]
+        },
+        {
+          "slideNumber": 3,
+          "title": "Ashram Big School: Mental Education Curriculum",
+          "subtitle": "Designing educational materials inspired by integral development",
+          "icon": "BookOpen",
+          "color": "sun",
+          "bulletPoints": [
+            "Developed mental education curricula combining logic, concentration, and inner calm.",
+            "Created engaging student worksheets, facilitator manuals, and active games.",
+            "Taught children how to quiet their minds, observe their thoughts, and make kind choices.",
+            "Integrated scientific reasoning with ethical values and Indian wisdom."
+          ],
+          "quote": "When the mind is quiet, the brightest stars of thought can shine.",
+          "tags": [
+            "Curriculum",
+            "Integral Education",
+            "Mind Training"
+          ]
+        }
+      ],
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    },
+    {
+      "_id": "doc_3",
+      "title": "Take Your Flight: Brain Power, Astromath & Life Skills",
+      "slug": "take-your-flight-curriculum",
+      "category": "Learning Programs",
+      "badge": "Student Superpowers",
+      "order": 3,
+      "summary": "Our flagship programs designed to unlock the ultimate potential within every student.",
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Astromath & Memory Enhancement",
+          "subtitle": "Playing with numbers, cosmic rhythms, and brain gym exercises",
+          "icon": "Target",
+          "color": "sky",
+          "bulletPoints": [
+            "Combines astronomical cycles, Vedic mathematical patterns, and brain hemisphere stimulation.",
+            "Interactive number games that eliminate math anxiety in elementary and middle schoolers.",
+            "Memory palace techniques to remember facts easily without cramming.",
+            "Attention improvement rituals to stay focused during study sessions."
+          ],
+          "quote": "Math is the rhythm of the cosmos; when you play with it, numbers dance!",
+          "tags": [
+            "Astromath",
+            "Brain Gym",
+            "Memory"
+          ]
+        },
+        {
+          "slideNumber": 2,
+          "title": "Conflict Resolution & Friendly Communication",
+          "subtitle": "How to turn disagreements into friendships and teamwork",
+          "icon": "Users",
+          "color": "coral",
+          "bulletPoints": [
+            "Teaches kids emotional labeling: 'I feel angry because...' instead of slamming doors or yelling.",
+            "Active listening games where children practice stepping into each other's shoes.",
+            "Decision-making frameworks: Thinking about the short-term feeling vs long-term consequence.",
+            "Building confidence for stage speaking, class presentations, and group discussions."
+          ],
+          "quote": "Gentle words can soften the hardest rock.",
+          "tags": [
+            "Communication",
+            "Empathy",
+            "Teamwork"
+          ]
+        },
+        {
+          "slideNumber": 3,
+          "title": "Empowerment, Stress Relief & Healthy Living",
+          "subtitle": "Holistic self-care for students, young women, and educators",
+          "icon": "ShieldCheck",
+          "color": "mint",
+          "bulletPoints": [
+            "Simple daily breathing exercises to calm pre-exam jitters.",
+            "Ayurvedic lifestyle guidance: sleeping well, eating fresh foods, and connecting with nature.",
+            "Special programs on the Power of Women and youth leadership.",
+            "Inspiring young girls to embrace STEM engineering and creative humanities together."
+          ],
+          "quote": "You have wings of wisdom and wings of effort—open them and take flight!",
+          "tags": [
+            "Wellness",
+            "Women In STEM",
+            "Life Mastery"
+          ]
+        }
+      ],
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    },
+    {
+      "_id": "doc_4",
+      "title": "Software Engineering & Enterprise Leadership",
+      "slug": "software-engineering-leadership",
+      "category": "Tech Legacy",
+      "badge": "Engineering Excellence",
+      "order": 4,
+      "summary": "Deep dive into 9+ years of enterprise Java, MVC client frameworks, and international systems.",
+      "slides": [
+        {
+          "slideNumber": 1,
+          "title": "Enterprise Architecture at Zoho Development Center",
+          "subtitle": "WebNMS Network Management Systems & Java Client Framework",
+          "icon": "Cpu",
+          "color": "grape",
+          "bulletPoints": [
+            "Developed modular enterprise Java applications for large-scale network monitoring.",
+            "Crafted Java Swing Client Framework with Model-View-Controller (MVC) architecture.",
+            "Created dynamic XML-based custom database views and runtime customizable menu frameworks.",
+            "Handled over 1,500 enterprise technical support requests for global customers."
+          ],
+          "quote": "Clean architecture is not an accident; it is the art of intentional simplicity.",
+          "tags": [
+            "Java",
+            "MVC",
+            "Zoho",
+            "Software Architecture"
+          ]
+        },
+        {
+          "slideNumber": 2,
+          "title": "Carrier Integrations at Wipro for Best Buy USA",
+          "subtitle": "The BEAST Platform: North America's leading retail activation system",
+          "icon": "Layers",
+          "color": "sun",
+          "bulletPoints": [
+            "Integrated Point-of-Sale (POS) systems across thousands of Best Buy retail stores.",
+            "Seamless live integration with Verizon, Sprint, AT&T, T-Mobile, and Virgin Mobile.",
+            "Modernized legacy database interactions into scalable web service architectures.",
+            "Maintained zero-downtime reliability for millions of retail mobile activations."
+          ],
+          "quote": "Reliability is the greatest feature any engineer can ship.",
+          "tags": [
+            "Wipro",
+            "Best Buy",
+            "Telecom",
+            "Web Services"
+          ]
+        }
+      ],
+      "createdAt": "2026-10-27T05:31:34.948Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "_id": "inq_1",
+      "name": "Aarav Sharma",
+      "email": "aarav.parent@gmail.com",
+      "phone": "+91 9845012345",
+      "role": "Parent",
+      "subject": "Enrollment in Astromath & Concentration Booster",
+      "message": "Hello Teacher Lakshmipriya! My 8-year-old son has a deep fear of math but loves patterns. We would love to join your upcoming cohort.",
+      "status": "new",
+      "serviceInterested": "Astromath & Playful Brain Acceleration",
+      "createdAt": "2026-10-26T05:31:34.948Z"
+    },
+    {
+      "_id": "inq_2",
+      "name": "Meera Krishnan",
+      "email": "principal@greenwoodschool.edu",
+      "phone": "+91 9444156789",
+      "role": "School Principal",
+      "subject": "Mental Education Teacher Training Workshop",
+      "message": "We admire your integral education work at Sri Aurobindo Ashram. We want to conduct a 2-day workshop for our elementary teachers.",
+      "status": "contacted",
+      "serviceInterested": "Mental Education & Curriculum Architecture",
+      "createdAt": "2026-10-25T05:31:34.948Z"
+    }
+  ],
+  "profile": {
+    "name": "Lakshmipriya Vinothkumar",
+    "titles": [
+      "Mind & Human Transformation Educator",
+      "Kindergarten & School Counsellor",
+      "Former Zoho Team Lead & Wipro Senior Engineer",
+      "Curriculum Designer & Integral Education Specialist"
+    ],
+    "contact": {
+      "phones": [
+        "+91 7650992525",
+        "+91 9790662672"
+      ],
+      "emails": [
+        "reachtolakshmipriya@gmail.com",
+        "lakeepri@gmail.com"
+      ],
+      "locations": [
+        "Chennai",
+        "Pondicherry",
+        "Coimbatore",
+        "Bangalore"
+      ]
+    },
+    "tagline": "Bridging the Logic of Code with the Wonder of Child Potential",
+    "summary": "Dedicated over a decade to programming complex machines at top technology giants before embracing a deeper calling toward expanding human consciousness and child potential. Since 2006, inspiring students, teachers, parents, and leaders across Canada, USA, France, Japan, Singapore, China, and India through joyful, holistic learning.",
+    "qualifications": [
+      {
+        "degree": "B.E. (Electrical and Electronics)",
+        "institute": "PET Engineering College / Anna University",
+        "year": "2006",
+        "score": "75.33%"
+      },
+      {
+        "degree": "MBA (Human Resources)",
+        "institute": "University of Madras",
+        "year": "2009",
+        "score": "67%"
+      },
+      {
+        "degree": "M.Sc. Psychology",
+        "institute": "University of Madras",
+        "year": "Post-Graduate"
+      },
+      {
+        "degree": "Diploma in Early Childhood Education",
+        "institute": "Specialized Training",
+        "year": "Certified"
+      },
+      {
+        "degree": "Certification in Indian Knowledge Systems (IKS)",
+        "institute": "Sanatana & IKS Academy",
+        "year": "Certified"
+      },
+      {
+        "degree": "Holistic Therapies & Coaching",
+        "institute": "Pranic Healing, Pranic Violet, Dorn Therapy, NLP, TA, Astrology",
+        "year": "Practitioner"
+      }
+    ],
+    "languages": [
+      "English",
+      "Tamil",
+      "Japanese"
+    ],
+    "milestones": [
+      {
+        "metric": "18+",
+        "label": "Years of Professional Leadership",
+        "icon": "Award"
+      },
+      {
+        "metric": "1500+",
+        "label": "Tech Systems Inquiries Resolved at Zoho",
+        "icon": "Code"
+      },
+      {
+        "metric": "₹50L+",
+        "label": "Educational Revenue Generated at Uni5",
+        "icon": "TrendingUp"
+      },
+      {
+        "metric": "10+",
+        "label": "Countries Touched by Workshops",
+        "icon": "Globe"
+      },
+      {
+        "metric": "25+",
+        "label": "Designed Transformational Programs",
+        "icon": "BookOpen"
+      }
+    ]
+  }
+}
